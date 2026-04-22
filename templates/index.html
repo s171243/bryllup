@@ -394,8 +394,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (opened) return;
         opened = true;
         envelope.classList.add('open');
-        setTimeout(() => { overlay.classList.add('opened'); }, 11000);
-        setTimeout(() => { overlay.remove(); }, 11800);
+        setTimeout(() => { overlay.classList.add('opened'); }, 5000);
+        setTimeout(() => { overlay.remove(); }, 5800);
     }
 
     envelope.addEventListener('click', openEnvelope);
