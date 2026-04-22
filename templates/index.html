@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bryllup — August 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header class="hero">
+    <div class="hero-content">
+        <p class="hero-date">August 2026</p>
+        <h1>Vi skal giftes!</h1>
+        <p class="hero-subtitle">Vi glæder os til at fejre dagen sammen med jer</p>
+    </div>
+</header>
+
+<main>
+    <!-- Program -->
+    <section id="program" class="section">
+        <h2>Dagens program</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-time">13:00</div>
+                <div class="timeline-content">
+                    <h3>Vielse</h3>
+                    <p>Virum Kirke</p>
+                    <p class="detail">Vi mødes ved kirken og fejrer vielsen sammen.</p>
+                    <a class="map-link" href="https://maps.google.com/?q=Virum+Kirke" target="_blank" rel="noopener">
+                        Se på kort ↗
+                    </a>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-time">ca. 14:30</div>
+                <div class="timeline-content">
+                    <h3>Reception</h3>
+                    <p>Vium Overgårdsvej 22</p>
+                    <p class="detail">Velkomstdrink og snacks efter vielsen.</p>
+                    <a class="map-link" href="https://maps.google.com/?q=Vium+Overg%C3%A5rdsvej+22" target="_blank" rel="noopener">
+                        Se på kort ↗
+                    </a>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-time">ca. 17:00</div>
+                <div class="timeline-content">
+                    <h3>Bryllupsfest</h3>
+                    <p>Peter Lieps Hus, Dyrehaven</p>
+                    <p class="detail">Middag, taler og fest til ud på natten.</p>
+                    <a class="map-link" href="https://maps.google.com/?q=Peter+Lieps+Hus+Dyrehaven" target="_blank" rel="noopener">
+                        Se på kort ↗
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toastmaster -->
+    <section id="toastmaster" class="section section-alt">
+        <h2>Toastmaster</h2>
+        <div class="card">
+            <p>Har du en tale, en sang eller en overraskelse, du gerne vil bidrage med?</p>
+            <p>Kontakt vores toastmaster for at koordinere:</p>
+            <div class="toastmaster-info">
+                <div class="toastmaster-name">Toastmaster-navn</div>
+                <div class="contact-links">
+                    <a href="tel:+4512345678" class="contact-btn">
+                        <span class="icon">📞</span> Ring op
+                    </a>
+                    <a href="sms:+4512345678" class="contact-btn">
+                        <span class="icon">💬</span> Send sms
+                    </a>
+                    <a href="mailto:toastmaster@eksempel.dk" class="contact-btn">
+                        <span class="icon">✉️</span> Send e-mail
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Praktisk info -->
+    <section id="praktisk" class="section">
+        <h2>Praktisk info</h2>
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>Dresscode</h3>
+                <p>Pænt tøj — mænd i jakkesæt, kvinder i kjole eller tilsvarende.</p>
+            </div>
+            <div class="info-card">
+                <h3>Gaver</h3>
+                <p>Jeres tilstedeværelse er den største gave. Ønskes der alligevel at give noget, sættes et bidrag til bryllupsrejsen stor pris på.</p>
+            </div>
+            <div class="info-card">
+                <h3>Parkering</h3>
+                <p>Der er parkering ved kirken og ved festlokalet. Nærmere info følger.</p>
+            </div>
+            <div class="info-card">
+                <h3>Transport</h3>
+                <p>Vi sørger for fælles transport mellem lokationerne. Mere info følger.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- RSVP -->
+    <section id="rsvp" class="section section-alt">
+        <h2>Tilmelding</h2>
+        <div class="card centered">
+            <p>Vi vil meget gerne vide, om du/I kan komme.</p>
+            <p>Giv besked senest <strong>[dato]</strong>.</p>
+            <div class="contact-links">
+                <a href="sms:+4512345678?body=Hej!%20Jeg%20kommer%20gerne%20til%20brylluppet!" class="contact-btn">
+                    <span class="icon">💬</span> Svar via sms
+                </a>
+                <a href="mailto:rsvp@eksempel.dk?subject=RSVP%20Bryllup" class="contact-btn">
+                    <span class="icon">✉️</span> Svar via e-mail
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>Vi glæder os til at se jer! ♥</p>
+</footer>
+
+</body>
+</html>
