@@ -402,15 +402,15 @@ document.addEventListener('DOMContentLoaded', () => {
         // Open flap + slide letter up
         envelope.classList.add('open');
 
-        // After letter slides up, fade out the overlay
+        // Letter slides up in ~1s, then wait 10s before fading out
         setTimeout(() => {
             overlay.classList.add('opened');
-        }, 1400);
+        }, 11000);
 
-        // Remove overlay from DOM after transition
+        // Remove overlay from DOM after fade transition
         setTimeout(() => {
             overlay.remove();
-        }, 2200);
+        }, 11800);
     }
 
     envelope.addEventListener('click', openEnvelope);
