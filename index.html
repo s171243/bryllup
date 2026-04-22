@@ -11,6 +11,32 @@
 </head>
 <body>
 
+<!-- ============ ENVELOPE INTRO ============ -->
+<div id="envelope-overlay">
+    <div id="envelope-scene">
+        <p class="envelope-hint">Tryk for at åbne</p>
+        <div id="envelope" role="button" tabindex="0" aria-label="Åbn invitation">
+            <!-- Back of envelope -->
+            <div class="envelope-back"></div>
+            <!-- Letter that slides up -->
+            <div class="envelope-letter">
+                <div class="letter-content">
+                    <p class="letter-date">22. august 2026</p>
+                    <p class="letter-names">Christian<br><span class="letter-amp">&</span><br>Marie-Louise</p>
+                    <p class="letter-line">I er inviteret til vores bryllup</p>
+                    <div class="letter-heart">❤️</div>
+                </div>
+            </div>
+            <!-- Front flap (triangle) -->
+            <div class="envelope-flap"></div>
+            <!-- Front of envelope -->
+            <div class="envelope-front"></div>
+            <!-- Wax seal -->
+            <div class="envelope-seal">💌</div>
+        </div>
+    </div>
+</div>
+
 <!-- Floating emojis that drift across the screen -->
 <div class="floating-emojis" aria-hidden="true">
     <span class="floater" style="--delay: 0s; --x-start: 10%; --duration: 12s;">💒</span>
@@ -358,6 +384,43 @@ document.addEventListener('DOMContentLoaded', () => {
         el.style.transform = 'translateY(0)';
     });
 });
+
+// ==========================================
+// Envelope intro
+// ==========================================
+(function() {
+    const envelope = document.getElementById('envelope');
+    const overlay = document.getElementById('envelope-overlay');
+    if (!envelope || !overlay) return;
+
+    let opened = false;
+
+    function openEnvelope() {
+        if (opened) return;
+        opened = true;
+
+        // Open flap + slide letter up
+        envelope.classList.add('open');
+
+        // After letter slides up, fade out the overlay
+        setTimeout(() => {
+            overlay.classList.add('opened');
+        }, 1400);
+
+        // Remove overlay from DOM after transition
+        setTimeout(() => {
+            overlay.remove();
+        }, 2200);
+    }
+
+    envelope.addEventListener('click', openEnvelope);
+    envelope.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            openEnvelope();
+        }
+    });
+})();
 </script>
 
 </body>

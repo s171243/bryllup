@@ -1,3 +1,224 @@
+/* === Envelope Intro === */
+#envelope-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    background: linear-gradient(160deg, #f5f0e8 0%, #e8e0d4 40%, #d4c9b8 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+#envelope-overlay.opened {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+#envelope-scene {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.envelope-hint {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #8b7355;
+    animation: hintPulse 2s ease-in-out infinite;
+}
+
+@keyframes hintPulse {
+    0%, 100% { opacity: 0.6; }
+    50% { opacity: 1; }
+}
+
+#envelope {
+    position: relative;
+    width: 320px;
+    height: 220px;
+    cursor: pointer;
+    perspective: 800px;
+    transition: transform 0.3s ease;
+}
+
+#envelope:hover {
+    transform: scale(1.03);
+}
+
+/* Envelope back */
+.envelope-back {
+    position: absolute;
+    inset: 0;
+    background: #c4a97d;
+    border-radius: 4px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Envelope front (bottom half) */
+.envelope-front {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 65%;
+    background: linear-gradient(180deg, #d4bb8a 0%, #c4a97d 100%);
+    border-radius: 0 0 4px 4px;
+    z-index: 3;
+}
+
+/* Front triangular fold */
+.envelope-front::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    border-left: 160px solid transparent;
+    border-right: 160px solid transparent;
+    border-bottom: 80px solid #d4bb8a;
+    transform: translateY(-80px);
+}
+
+/* Flap (top triangle) */
+.envelope-flap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    border-left: 160px solid transparent;
+    border-right: 160px solid transparent;
+    border-top: 120px solid #b89a6a;
+    z-index: 4;
+    transform-origin: top center;
+    transition: transform 0.6s ease;
+}
+
+/* Letter inside */
+.envelope-letter {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 15px;
+    height: 180px;
+    background: #faf8f5;
+    border-radius: 4px;
+    z-index: 2;
+    transition: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+    transition-delay: 0.3s;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.letter-content {
+    padding: 1.25rem 1rem;
+    text-align: center;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.letter-date {
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #8b7355;
+    margin-bottom: 0.5rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.letter-names {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2c2c2c;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+.letter-amp {
+    font-style: italic;
+    font-weight: 400;
+    color: #8b7355;
+    font-size: 1.2rem;
+}
+
+.letter-line {
+    font-size: 0.85rem;
+    font-style: italic;
+    color: #6b6560;
+}
+
+.letter-heart {
+    font-size: 1.2rem;
+    margin-top: 0.25rem;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+/* Wax seal */
+.envelope-seal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    z-index: 5;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* === Envelope OPEN state === */
+#envelope.open .envelope-flap {
+    transform: rotateX(180deg);
+}
+
+#envelope.open .envelope-letter {
+    transform: translateY(-160px);
+}
+
+#envelope.open .envelope-seal {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+}
+
+/* Envelope responsive */
+@media (max-width: 400px) {
+    #envelope {
+        width: 260px;
+        height: 180px;
+    }
+
+    .envelope-front::before {
+        border-left-width: 130px;
+        border-right-width: 130px;
+        border-bottom-width: 65px;
+        transform: translateY(-65px);
+    }
+
+    .envelope-flap {
+        border-left-width: 130px;
+        border-right-width: 130px;
+        border-top-width: 100px;
+    }
+
+    .envelope-letter {
+        left: 15px;
+        right: 15px;
+        height: 150px;
+    }
+
+    .letter-names {
+        font-size: 1.2rem;
+    }
+
+    .letter-date {
+        font-size: 0.65rem;
+    }
+}
+
 /* === Reset & Base === */
 *, *::before, *::after {
     margin: 0;
