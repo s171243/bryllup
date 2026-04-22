@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian & Marie-Louise — Bryllup 22. august 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Floating emojis that drift across the screen -->
+<div class="floating-emojis" aria-hidden="true">
+    <span class="floater" style="--delay: 0s; --x-start: 10%; --duration: 12s;">💒</span>
+    <span class="floater" style="--delay: 2s; --x-start: 25%; --duration: 15s;">💍</span>
+    <span class="floater" style="--delay: 4s; --x-start: 50%; --duration: 11s;">🥂</span>
+    <span class="floater" style="--delay: 1s; --x-start: 70%; --duration: 14s;">🎉</span>
+    <span class="floater" style="--delay: 3s; --x-start: 85%; --duration: 13s;">💐</span>
+    <span class="floater" style="--delay: 5s; --x-start: 40%; --duration: 16s;">🦌</span>
+    <span class="floater" style="--delay: 7s; --x-start: 60%; --duration: 10s;">🍾</span>
+    <span class="floater" style="--delay: 6s; --x-start: 15%; --duration: 12s;">❤️</span>
+    <span class="floater" style="--delay: 8s; --x-start: 90%; --duration: 14s;">👰</span>
+    <span class="floater" style="--delay: 9s; --x-start: 35%; --duration: 11s;">🤵</span>
+</div>
+
+<header class="hero">
+    <div class="hero-content">
+        <p class="hero-date">22. august 2026</p>
+        <h1 class="fade-in">Christian & Marie-Louise</h1>
+        <p class="hero-subtitle fade-in delay-1">Vi skal giftes — og glæder os til at fejre dagen sammen med jer</p>
+        <div class="hero-rings fade-in delay-2">💍 + 💍</div>
+        <a href="#program" class="scroll-hint fade-in delay-3">
+            <span class="scroll-arrow">↓</span>
+            Se programmet
+        </a>
+    </div>
+</header>
+
+<main>
+    <!-- Countdown -->
+    <section id="countdown-section" class="section section-countdown">
+        <h2 class="reveal">Nedtælling</h2>
+        <div class="countdown reveal" id="countdown">
+            <div class="countdown-unit">
+                <span class="countdown-number" id="days">--</span>
+                <span class="countdown-label">dage</span>
+            </div>
+            <div class="countdown-unit">
+                <span class="countdown-number" id="hours">--</span>
+                <span class="countdown-label">timer</span>
+            </div>
+            <div class="countdown-unit">
+                <span class="countdown-number" id="minutes">--</span>
+                <span class="countdown-label">minutter</span>
+            </div>
+            <div class="countdown-unit">
+                <span class="countdown-number" id="seconds">--</span>
+                <span class="countdown-label">sekunder</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program -->
+    <section id="program" class="section">
+        <h2 class="reveal">Dagens program</h2>
+        <div class="timeline">
+            <div class="timeline-item reveal">
+                <div class="timeline-time">13:00</div>
+                <div class="timeline-content">
+                    <div class="timeline-emoji">⛪</div>
+                    <h3>Vielse</h3>
+                    <p>Virum Kirke</p>
+                    <p class="detail">Vi mødes ved kirken og fejrer vielsen sammen. Husk lommetørklæder! 😭</p>
+                    <a class="map-link" href="https://maps.google.com/?q=Virum+Kirke" target="_blank" rel="noopener">
+                        📍 Se på kort ↗
+                    </a>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-time">ca. 14:30</div>
+                <div class="timeline-content">
+                    <div class="timeline-emoji">🥂</div>
+                    <h3>Reception</h3>
+                    <p>Vium Overgårdsvej 22</p>
+                    <p class="detail">Velkomstdrink, snacks og den obligatoriske "skål!"-runde.</p>
+                    <a class="map-link" href="https://maps.google.com/?q=Vium+Overg%C3%A5rdsvej+22" target="_blank" rel="noopener">
+                        📍 Se på kort ↗
+                    </a>
+                </div>
+            </div>
+            <div class="timeline-item reveal">
+                <div class="timeline-time">ca. 17:00</div>
+                <div class="timeline-content">
+                    <div class="timeline-emoji">🦌</div>
+                    <h3>Bryllupsfest</h3>
+                    <p>Peter Lieps Hus, Dyrehaven</p>
+                    <p class="detail">Middag, taler, dans og fest til ud på natten. Pas på hjortene på vej ind! 🌳</p>
+                    <a class="map-link" href="https://maps.google.com/?q=Peter+Lieps+Hus+Dyrehaven" target="_blank" rel="noopener">
+                        📍 Se på kort ↗
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fun interlude -->
+    <section class="section section-fun">
+        <div class="fun-banner reveal">
+            <span class="fun-text">🎶 Der skal danses! 🎶</span>
+        </div>
+    </section>
+
+    <!-- Toastmaster -->
+    <section id="toastmaster" class="section section-alt">
+        <h2 class="reveal">Toastmaster 🎤</h2>
+        <div class="card reveal">
+            <p>Har du en tale, en sang, en sketch eller en overraskelse, du gerne vil bidrage med?</p>
+            <p>Kontakt vores toastmaster for at koordinere (ellers bliver det kaos 😅):</p>
+            <div class="toastmaster-info">
+                <div class="toastmaster-avatar">🎩</div>
+                <div class="toastmaster-name">Toastmaster-navn</div>
+                <div class="contact-links">
+                    <a href="tel:+4512345678" class="contact-btn wobble-hover">
+                        <span class="icon">📞</span> Ring op
+                    </a>
+                    <a href="sms:+4512345678" class="contact-btn wobble-hover">
+                        <span class="icon">💬</span> Send sms
+                    </a>
+                    <a href="mailto:toastmaster@eksempel.dk" class="contact-btn wobble-hover">
+                        <span class="icon">✉️</span> Send e-mail
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Praktisk info -->
+    <section id="praktisk" class="section">
+        <h2 class="reveal">Praktisk info</h2>
+        <div class="info-grid">
+            <div class="info-card reveal">
+                <div class="info-icon">👔</div>
+                <h3>Dresscode</h3>
+                <p>Pænt tøj — mænd i jakkesæt, kvinder i kjole eller tilsvarende. Danseskoene er et must!</p>
+            </div>
+            <div class="info-card reveal">
+                <div class="info-icon">🎁</div>
+                <h3>Gaver</h3>
+                <p>Jeres tilstedeværelse er den største gave. Ønskes der alligevel at give noget, sættes et bidrag til bryllupsrejsen stor pris på. ✈️</p>
+            </div>
+            <div class="info-card reveal">
+                <div class="info-icon">🅿️</div>
+                <h3>Parkering</h3>
+                <p>Der er parkering ved kirken og ved festlokalet. Nærmere info følger.</p>
+            </div>
+            <div class="info-card reveal">
+                <div class="info-icon">🚌</div>
+                <h3>Transport</h3>
+                <p>Vi sørger for fælles transport mellem lokationerne. Bare læn jer tilbage! 🛋️</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- RSVP -->
+    <section id="rsvp" class="section section-alt">
+        <h2 class="reveal">Tilmelding 💌</h2>
+        <div class="card centered reveal">
+            <p>Vi vil meget gerne vide, om du/I kan komme!</p>
+            <p>Giv besked senest <strong>[dato]</strong>.</p>
+            <div class="contact-links">
+                <a href="sms:+4512345678?body=Hej!%20Jeg%20kommer%20gerne%20til%20brylluppet!%20🎉" class="contact-btn wobble-hover">
+                    <span class="icon">💬</span> Svar via sms
+                </a>
+                <a href="mailto:rsvp@eksempel.dk?subject=RSVP%20Bryllup" class="contact-btn wobble-hover">
+                    <span class="icon">✉️</span> Svar via e-mail
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p class="footer-text">Vi glæder os til at se jer! ❤️</p>
+    <div class="footer-emojis">👰 🤵 💒 🎶 🥂 🎉</div>
+</footer>
+
+<!-- Confetti on click easter egg -->
+<canvas id="confetti-canvas"></canvas>
+
+<script>
+// ==========================================
+// Countdown timer
+// ==========================================
+(function() {
+    // Set your wedding date here (month is 0-indexed, so 7 = August)
+    const weddingDate = new Date(2026, 7, 22, 13, 0, 0); // August 22, 2026 at 13:00
+
+    function updateCountdown() {
+        const now = new Date();
+        const diff = weddingDate - now;
+
+        if (diff <= 0) {
+            document.getElementById('countdown').innerHTML =
+                '<p style="font-size:2rem;font-family:var(--font-display);">Det er i dag! 🎉🥳💍</p>';
+            return;
+        }
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+        document.getElementById('days').textContent = days;
+        document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+        document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+        document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+})();
+
+// ==========================================
+// Scroll reveal animations
+// ==========================================
+(function() {
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('revealed');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.15 });
+
+    reveals.forEach(el => observer.observe(el));
+})();
+
+// ==========================================
+// Confetti easter egg (click anywhere 5 times fast)
+// ==========================================
+(function() {
+    const canvas = document.getElementById('confetti-canvas');
+    const ctx = canvas.getContext('2d');
+    let clicks = 0;
+    let clickTimer;
+    let particles = [];
+    let animating = false;
+
+    function resize() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    }
+    resize();
+    window.addEventListener('resize', resize);
+
+    const colors = ['#c4a97d', '#8b7355', '#e8d5b5', '#ff6b6b', '#ffd93d', '#6bcb77', '#4d96ff'];
+    const emojis = ['💍', '❤️', '🥂', '🎉', '💐', '✨', '💒', '🦌'];
+
+    function createParticles(x, y) {
+        for (let i = 0; i < 60; i++) {
+            const isEmoji = Math.random() > 0.6;
+            particles.push({
+                x: x,
+                y: y,
+                vx: (Math.random() - 0.5) * 12,
+                vy: (Math.random() - 1) * 12,
+                size: isEmoji ? 20 : Math.random() * 8 + 3,
+                color: colors[Math.floor(Math.random() * colors.length)],
+                emoji: isEmoji ? emojis[Math.floor(Math.random() * emojis.length)] : null,
+                life: 1,
+                decay: Math.random() * 0.015 + 0.008,
+                rotation: Math.random() * 360,
+                rotSpeed: (Math.random() - 0.5) * 10
+            });
+        }
+    }
+
+    function animate() {
+        if (!animating) return;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        particles = particles.filter(p => p.life > 0);
+
+        particles.forEach(p => {
+            p.x += p.vx;
+            p.y += p.vy;
+            p.vy += 0.25;
+            p.life -= p.decay;
+            p.rotation += p.rotSpeed;
+
+            ctx.globalAlpha = p.life;
+            ctx.save();
+            ctx.translate(p.x, p.y);
+            ctx.rotate(p.rotation * Math.PI / 180);
+
+            if (p.emoji) {
+                ctx.font = `${p.size}px serif`;
+                ctx.textAlign = 'center';
+                ctx.fillText(p.emoji, 0, 0);
+            } else {
+                ctx.fillStyle = p.color;
+                ctx.fillRect(-p.size / 2, -p.size / 2, p.size, p.size);
+            }
+
+            ctx.restore();
+        });
+
+        ctx.globalAlpha = 1;
+
+        if (particles.length > 0) {
+            requestAnimationFrame(animate);
+        } else {
+            animating = false;
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+    }
+
+    document.addEventListener('click', (e) => {
+        clicks++;
+        clearTimeout(clickTimer);
+        clickTimer = setTimeout(() => { clicks = 0; }, 800);
+
+        if (clicks >= 5) {
+            clicks = 0;
+            createParticles(e.clientX, e.clientY);
+            if (!animating) {
+                animating = true;
+                animate();
+            }
+        }
+    });
+
+    // Also trigger confetti from the fun banner
+    const funBanner = document.querySelector('.fun-banner');
+    if (funBanner) {
+        funBanner.addEventListener('click', (e) => {
+            const rect = funBanner.getBoundingClientRect();
+            createParticles(rect.left + rect.width / 2, rect.top + rect.height / 2);
+            if (!animating) {
+                animating = true;
+                animate();
+            }
+        });
+    }
+})();
+
+// ==========================================
+// Smooth hero entrance
+// ==========================================
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.fade-in').forEach(el => {
+        el.style.opacity = '1';
+        el.style.transform = 'translateY(0)';
+    });
+});
+</script>
+
+</body>
+</html>
