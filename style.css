@@ -412,7 +412,15 @@ body {
     padding: 4rem 2rem;
 }
 
-.section-countdown > * {
+.section-countdown h2 {
+    max-width: none;
+    width: 100%;
+    font-size: clamp(2rem, 5vw, 3.4rem);
+    margin-bottom: 2.5rem;
+    letter-spacing: 0.01em;
+}
+
+.section-countdown .countdown {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
