@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christian & Marie-Louise — Bryllup 22. august 2026</title>
+    <title>Marie-Louise & Christian — Bryllup 22. august 2026</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
             <div class="envelope-letter">
                 <div class="letter-content">
                     <p class="letter-date">22. august 2026</p>
-                    <p class="letter-names">Christian<br><span class="letter-amp">&</span><br>Marie-Louise</p>
+                    <p class="letter-names">Marie-Louise<br><span class="letter-amp">&</span><br>Christian</p>
                     <p class="letter-line">I er inviteret til vores bryllup</p>
                     <div class="letter-heart">❤️</div>
                 </div>
@@ -54,7 +54,7 @@
 <header class="hero">
     <div class="hero-content">
         <p class="hero-date">22. august 2026</p>
-        <h1 class="fade-in">Christian & Marie-Louise</h1>
+        <h1 class="fade-in">Marie-Louise & Christian</h1>
         <p class="hero-subtitle fade-in delay-1">Vi skal giftes — og glæder os til at fejre dagen sammen med jer</p>
         <div class="hero-rings fade-in delay-2">💍 + 💍</div>
         <a href="#program" class="scroll-hint fade-in delay-3">
@@ -65,9 +65,33 @@
 </header>
 
 <main>
+    <!-- Os / Vores historie -->
+    <section id="os" class="section section-story">
+        <div class="story-intro reveal">
+            <h2>Os to</h2>
+            <p class="story-text">
+                Der var engang to energiske mennesker, som fandt ud af, at de skulle dele livet sammen.
+                Nu skal vi giftes — og vi håber, at I vil komme og fejre dagen sammen med os.
+                Derfor er I inviteret til årets fest! 🎉
+            </p>
+        </div>
+        <div class="collage reveal">
+            <div class="collage-photo c1" data-photo="1"><span class="photo-placeholder">📸</span></div>
+            <div class="collage-photo c2" data-photo="2"><span class="photo-placeholder">💍</span></div>
+            <div class="collage-photo c3" data-photo="3"><span class="photo-placeholder">❤️</span></div>
+            <div class="collage-photo c4" data-photo="4"><span class="photo-placeholder">📷</span></div>
+            <div class="collage-photo c5" data-photo="5"><span class="photo-placeholder">✨</span></div>
+            <div class="collage-photo c6" data-photo="6"><span class="photo-placeholder">🌿</span></div>
+            <div class="collage-photo c7" data-photo="7"><span class="photo-placeholder">🥂</span></div>
+            <div class="collage-photo c8" data-photo="8"><span class="photo-placeholder">💐</span></div>
+            <div class="collage-photo c9" data-photo="9"><span class="photo-placeholder">📸</span></div>
+            <div class="collage-photo c10" data-photo="10"><span class="photo-placeholder">🎉</span></div>
+        </div>
+    </section>
+
     <!-- Countdown -->
     <section id="countdown-section" class="section section-countdown">
-        <h2 class="reveal">Nedtælling</h2>
+        <h2 class="reveal">Nedtælling til vores store dag</h2>
         <div class="countdown reveal" id="countdown">
             <div class="countdown-unit">
                 <span class="countdown-number" id="days">--</span>
@@ -138,7 +162,9 @@
             <p>Har du en tale, en sang, en sketch eller en overraskelse, du gerne vil bidrage med?</p>
             <p>Kontakt vores toastmaster for at koordinere (ellers bliver det kaos 😅):</p>
             <div class="toastmaster-info">
-                <div class="toastmaster-avatar">🎩</div>
+                <div class="toastmaster-avatar toastmaster-photo" data-photo="toastmaster">
+                    <span class="photo-placeholder">🎩</span>
+                </div>
                 <div class="toastmaster-name">Line</div>
                 <div class="contact-links">
                     <a href="tel:+4512345678" class="contact-btn wobble-hover">
@@ -167,7 +193,7 @@
             <div class="info-card reveal">
                 <div class="info-icon">🎁</div>
                 <h3>Gaver</h3>
-                <p>Jeres tilstedeværelse er den største gave. Ønskes der alligevel at give noget, kan I se vores ønskeliste herunder. ✈️</p>
+                <p>Vil I gerne give en gave, har vi samlet et par ønsker — men det er på ingen måde et krav. ✈️</p>
                 <a class="map-link" href="https://www.wishlist.dk" target="_blank" rel="noopener">🎁 Se ønskeliste på Wishlist.dk ↗</a>
             </div>
             <div class="info-card reveal">
@@ -189,11 +215,12 @@
         <div class="card centered reveal">
             <p>Vi vil meget gerne vide, om du/I kan komme!</p>
             <p>Giv besked senest <strong>15. juli</strong>.</p>
+            <p class="rsvp-note">Husk at skrive <strong>antal personer</strong> og om der er <strong>allergener eller særlige kostbehov</strong> vi skal tage højde for.</p>
             <div class="contact-links">
-                <a href="sms:+4512345678?body=Hej!%20Jeg%20kommer%20gerne%20til%20brylluppet!%20🎉" class="contact-btn wobble-hover">
+                <a href="sms:+4512345678?body=Hej!%20Jeg%2Fvi%20kommer%20gerne%20til%20brylluppet!%20%F0%9F%8E%89%0A%0AAntal%20personer%3A%20%0AAllergener%2Fkost%3A%20" class="contact-btn wobble-hover">
                     <span class="icon">💬</span> Svar via sms
                 </a>
-                <a href="mailto:rsvp@eksempel.dk?subject=RSVP%20Bryllup" class="contact-btn wobble-hover">
+                <a href="mailto:rsvp@eksempel.dk?subject=RSVP%20Bryllup&body=Hej!%20Jeg%2Fvi%20kommer%20gerne%20til%20brylluppet!%20%F0%9F%8E%89%0A%0AAntal%20personer%3A%20%0AAllergener%2Fkost%3A%20" class="contact-btn wobble-hover">
                     <span class="icon">✉️</span> Svar via e-mail
                 </a>
             </div>
