@@ -409,21 +409,36 @@ body {
     text-align: center;
     background: linear-gradient(135deg, var(--color-bg-alt), #e8dfd4);
     max-width: 100%;
-    padding: 4rem 2rem;
+    padding: 4rem 0;
 }
 
 .section-countdown h2 {
     max-width: none;
     width: 100%;
-    font-size: clamp(2rem, 5vw, 3.4rem);
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 1rem;
+    font-size: clamp(2.2rem, 7vw, 5rem);
+    line-height: 1.1;
     margin-bottom: 2.5rem;
     letter-spacing: 0.01em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
 }
 
 .section-countdown .countdown {
-    max-width: 800px;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 2rem;
+}
+
+@media (max-width: 700px) {
+    .section-countdown h2 {
+        white-space: normal;
+        font-size: clamp(1.6rem, 8vw, 2.4rem);
+    }
 }
 
 .countdown {
