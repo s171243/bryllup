@@ -402,11 +402,11 @@ body {
 }
 
 .ml-dash {
-    font-family: var(--font-display);
+    font-family: Georgia, 'Times New Roman', serif;
     font-weight: 400;
-    font-size: 0.9em;
-    vertical-align: 0.04em;
-    padding: 0 0.02em;
+    font-size: 0.8em;
+    vertical-align: 0.08em;
+    padding: 0 0.03em;
 }
 
 .hero-subtitle {
