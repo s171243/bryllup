@@ -38,16 +38,11 @@
 
 <!-- Floating emojis that drift across the screen -->
 <div class="floating-emojis" aria-hidden="true">
-    <span class="floater" style="--delay: 0s; --x-start: 10%; --duration: 12s;">💒</span>
-    <span class="floater" style="--delay: 2s; --x-start: 25%; --duration: 15s;">💍</span>
-    <span class="floater" style="--delay: 4s; --x-start: 50%; --duration: 11s;">🥂</span>
-    <span class="floater" style="--delay: 1s; --x-start: 70%; --duration: 14s;">🎉</span>
-    <span class="floater" style="--delay: 3s; --x-start: 85%; --duration: 13s;">💐</span>
-    <span class="floater" style="--delay: 5s; --x-start: 40%; --duration: 16s;">🦌</span>
-    <span class="floater" style="--delay: 7s; --x-start: 60%; --duration: 10s;">🍾</span>
-    <span class="floater" style="--delay: 6s; --x-start: 15%; --duration: 12s;">❤️</span>
-    <span class="floater" style="--delay: 8s; --x-start: 90%; --duration: 14s;">👰</span>
-    <span class="floater" style="--delay: 9s; --x-start: 35%; --duration: 11s;">🤵</span>
+    <span class="floater" style="--delay: 0s; --x-start: 15%; --duration: 26s;">💒</span>
+    <span class="floater" style="--delay: 5s; --x-start: 40%; --duration: 30s;">💍</span>
+    <span class="floater" style="--delay: 10s; --x-start: 60%; --duration: 24s;">🥂</span>
+    <span class="floater" style="--delay: 7s; --x-start: 80%; --duration: 28s;">🎉</span>
+    <span class="floater" style="--delay: 14s; --x-start: 90%; --duration: 27s;">💐</span>
 </div>
 
 <header class="hero">
@@ -415,15 +410,15 @@ document.addEventListener('DOMContentLoaded', () => {
         // Open flap + slide letter up
         envelope.classList.add('open');
 
-        // Letter slides up in ~1s, then wait 4s before fading out
+        // Letter slides up in ~1s, then briefly pause before fading out
         setTimeout(() => {
             overlay.classList.add('opened');
-        }, 5000);
+        }, 2000);
 
         // Remove overlay from DOM after fade transition
         setTimeout(() => {
             overlay.remove();
-        }, 5800);
+        }, 2800);
     }
 
     envelope.addEventListener('click', openEnvelope);
